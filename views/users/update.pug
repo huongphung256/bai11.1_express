@@ -1,0 +1,12 @@
+extends ../layouts/common
+
+block content
+  h1 Update User
+
+  form(action="/users/" + id + "/update", method="POST")
+    div
+      label New Name
+      span &nbsp;
+      input(type="text", name="newName")
+      
+    button Update
